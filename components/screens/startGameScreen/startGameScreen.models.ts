@@ -1,5 +1,3 @@
-import { ISetScreen } from '@/constants';
-
 interface IStartGameScreenProps {
   setPickedNum: (n: number) => void;
 }
