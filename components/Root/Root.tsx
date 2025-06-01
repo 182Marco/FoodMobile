@@ -1,12 +1,12 @@
-import * as C from '@/components';
 import * as N from 'react-native';
 import { S } from './Root.style';
 import { useRoot } from './Root.hook';
-import { appScreens, diceImg } from '@/constants';
+import { diceImg } from '@/constants';
+import * as C from '@/components';
 
 const Root: React.FC = () => {
   const h = useRoot();
-  return <></>;
+  return <C.CategoriesScreen />;
 };
 
 export { Root };
