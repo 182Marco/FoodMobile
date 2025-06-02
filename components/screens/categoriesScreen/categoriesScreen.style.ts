@@ -8,7 +8,6 @@ const getStyles = () => {
 
   return StyleSheet.create({
     list: {
-      backgroundColor: 'white',
       flex: 1,
     },
   });
