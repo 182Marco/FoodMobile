@@ -1,5 +1,4 @@
 import * as N from 'react-native';
-import * as Gs from '@/styles';
 import { ICategoryGridTitle } from './categortGridTitle.models';
 import { useCategoryGridTitle } from './categoryGridTitle.hook';
 import { pressedBtnEffects } from './categoryGridTitle.style';
