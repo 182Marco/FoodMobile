@@ -3,8 +3,7 @@ import * as N from 'react-native';
 import * as Gs from '@/styles';
 
 const getStyles = () => {
-  const { height } = N.useWindowDimensions();
-  const IsLandskape = height < 380;
+  const IsAndroid = N.Platform.OS === 'android';
 
   return StyleSheet.create({
     gridItem: {
@@ -18,6 +17,7 @@ const getStyles = () => {
       shadowOpacity: 2.5,
       shadowOffset: { width: 0, height: 2 },
       shadowRadius: 8,
+      overflow: IsAndroid ? 'hidden' : 'visible',
     },
     innerWrap: {
       flex: 1,
@@ -29,6 +29,9 @@ const getStyles = () => {
       flex: 1,
     },
     text: {
+      fontWeight: 'bold',
+      fontSize: 17,
+      textAlign: 'center',
       color: 'black',
       backgroundColor: 'white',
     },
