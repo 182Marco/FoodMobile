@@ -20,6 +20,9 @@ const getStyles = () => {
       justifyContent: 'center',
       alignItems: 'center',
     },
+    btn: {
+      flex: 1,
+    },
     text: {
       color: 'black',
       backgroundColor: 'white',
