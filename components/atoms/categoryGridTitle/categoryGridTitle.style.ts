@@ -14,7 +14,12 @@ const getStyles = () => {
       borderRadius: 8,
       elevation: 4,
     },
-
+    innerWrap: {
+      flex: 1,
+      padding: 16,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     text: {
       color: 'black',
       backgroundColor: 'white',
