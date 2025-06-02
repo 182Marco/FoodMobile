@@ -13,6 +13,11 @@ const getStyles = () => {
       height: 150,
       borderRadius: 8,
       elevation: 4,
+      backgroundColor: 'white',
+      shadowColor: 'black',
+      shadowOpacity: 2.5,
+      shadowOffset: { width: 0, height: 2 },
+      shadowRadius: 8,
     },
     innerWrap: {
       flex: 1,
@@ -26,7 +31,6 @@ const getStyles = () => {
     text: {
       color: 'black',
       backgroundColor: 'white',
-      flex: 1,
     },
   });
 };
