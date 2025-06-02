@@ -1,8 +1,6 @@
 import { StyleSheet } from 'react-native';
 import * as N from 'react-native';
-import * as Gs from '@/styles';
 import { IPassCategoryGridTitleProp } from './categortGridTitle.models';
-import { IUseCategoriesScreen } from '@/components/screens/categoriesScreen/categoriesScreen.models';
 
 const getStyles: IPassCategoryGridTitleProp = p => {
   const IsAndroid = N.Platform.OS === 'android';
@@ -14,7 +12,7 @@ const getStyles: IPassCategoryGridTitleProp = p => {
       height: 150,
       borderRadius: 8,
       elevation: 4,
-      backgroundColor: p.color ? p.color : 'white',
+      backgroundColor: 'white',
       shadowColor: 'black',
       shadowOpacity: 2.5,
       shadowOffset: { width: 0, height: 2 },
@@ -26,6 +24,8 @@ const getStyles: IPassCategoryGridTitleProp = p => {
       padding: 16,
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: p.color ? p.color : 'white',
+      borderRadius: 8,
     },
     btn: {
       flex: 1,
