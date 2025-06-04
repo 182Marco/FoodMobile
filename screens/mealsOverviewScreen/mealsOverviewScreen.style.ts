@@ -7,8 +7,9 @@ const getStyles = () => {
   const IsLandskape = height < 380;
 
   return StyleSheet.create({
-    list: {
+    wrap: {
       flex: 1,
+      padding: 16,
     },
   });
 };
