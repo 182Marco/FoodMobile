@@ -1,4 +1,4 @@
-type ICategoriesScreen = React.FC<Record<string, any>>;
+type ICategoriesScreen = React.FC;
 
 type IUseCategoriesScreen = () => Record<string, any>;
 
