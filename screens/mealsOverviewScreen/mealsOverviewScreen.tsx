@@ -1,9 +1,12 @@
+import * as N from 'react-native';
+import { useMealsOverviewScreen } from './mealsOverviewScreen.hook';
+
 const mealsOverviewScreen = () => {
+  const { S, ...h } = useMealsOverviewScreen();
   return (
-    <div>
-      <h1>Meals Overview</h1>
-      <p>This is the meals overview screen.</p>
-    </div>
+    <N.View>
+      <N.Text>Meals Overview</N.Text>
+    </N.View>
   );
 };
 
