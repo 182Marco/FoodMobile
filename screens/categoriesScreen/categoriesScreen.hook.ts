@@ -4,7 +4,7 @@ import { IUseCategoriesScreen } from './categoriesScreen.models';
 
 const useCategoriesScreen: IUseCategoriesScreen = () => {
   const S = getStyles();
-  return { S, something: 2 };
+  return { S };
 };
 
 export { useCategoriesScreen };
