@@ -5,7 +5,7 @@ import { MEALS } from '@/data';
 const mealsOverviewScreen = () => {
   const { S, ...h } = useMealsOverviewScreen();
   return (
-    <N.View>
+    <N.View style={S.wrap}>
       <N.Text>{JSON.stringify(MEALS)}</N.Text>
     </N.View>
   );
