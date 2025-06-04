@@ -7,7 +7,10 @@ const CategoryGridTitle: ICategoryGridTitle = p => {
   const { S, ...h } = useCategoryGridTitle(p);
   return (
     <N.View style={S.gridItem}>
-      <N.Pressable {...pressedBtnEffects(p)} onPress={p.onPress}>
+      <N.Pressable
+        {...pressedBtnEffects(p)}
+        onPress={() => h.navigate('MealsOverview')}
+      >
         <N.View style={S.innerWrap}>
           <N.Text style={S.text}>{p.title}</N.Text>
         </N.View>
