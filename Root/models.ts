@@ -1,5 +1,4 @@
-import { appScreens } from '@/constants';
+import { IRootStackParamList } from '@/models';
+import { createStackNavigator } from '@react-navigation/stack';
 
-type IIsScreen = (str: appScreens) => boolean;
-
-export { IIsScreen };
+export const RootStack = createStackNavigator<IRootStackParamList>();
