@@ -1,4 +1,4 @@
 export * from './Btn';
-export * from './numberDisplay';
+export * from './categoryGridTitle';
 export * from './summary';
 export * from './title';
