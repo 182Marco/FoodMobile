@@ -1,8 +1,7 @@
-import { JSX } from 'react/jsx-runtime';
-
 interface ICategoryGridTitleProps {
   title: string;
-  color?: string;
+  color: string;
+  id: string;
 }
 
 type ICategoryGridTitle = React.FC<ICategoryGridTitleProps>;
