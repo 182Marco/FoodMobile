@@ -7,6 +7,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { S } from './Root.style';
 import * as Screens from '@/screens';
+import { RootStack } from './models';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,16 +18,16 @@ const Root: React.FC = () => {
     <View style={S.wrap}>
       <StatusBar style="dark" />
       <NavigationContainer ref={navigationRef}>
-        <Stack.Navigator initialRouteName="MealsCategories">
-          <Stack.Screen
+        <RootStack.Navigator initialRouteName="MealsCategories">
+          <RootStack.Screen
             name="MealsCategories"
             component={Screens.CategoriesScreen}
           />
-          <Stack.Screen
+          <RootStack.Screen
             name="MealsOverview"
-            component={Screens.mealsOverviewScreen}
+            component={Screens.MealsOverviewScreen}
           />
-        </Stack.Navigator>
+        </RootStack.Navigator>
       </NavigationContainer>
     </View>
   );
