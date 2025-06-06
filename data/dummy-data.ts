@@ -264,7 +264,7 @@ export const MEALS = [
     'Chocolate Souffle',
     'affordable',
     'hard',
-    'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    'https://www.flavoursholidays.co.uk/wp-content/uploads/2022/02/Chocolate-souffle-SM.jpg',
     45,
     [
       '1 Teaspoon melted Butter',
