@@ -204,7 +204,7 @@ export const MEALS = [
     'Pancakes',
     'affordable',
     'simple',
-    'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    'https://www.foodandfriends.nl/app/uploads/2020/12/Weekmenu-charlies-kitchen-maandag.jpg',
     20,
     [
       '1 1/2 Cups all-purpose Flour',
