@@ -1,8 +1,8 @@
 import { MEALS } from '@/data';
-import { IUseMealsOverviewScreen } from './mealsOverview.models';
+import { INavigation, IRoute } from './mealsOverview.models';
 import { getStyles } from './mealsOverviewScreen.style';
 
-const useMealsOverviewScreen: IUseMealsOverviewScreen = (navigation, route) => {
+const useMealsOverviewScreen = (navigation: INavigation, route: IRoute) => {
   const S = getStyles();
   const {
     params: { categoryId },
