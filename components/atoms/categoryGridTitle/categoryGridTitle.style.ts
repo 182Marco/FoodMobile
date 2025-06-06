@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native';
 import * as N from 'react-native';
-import { IPassCategoryGridTitleProp } from './categortGridTitle.models';
+import * as Gs from '@/styles';
+import { ICategoryGridTitleProps } from './categortGridTitle.models';
 
-const getStyles: IPassCategoryGridTitleProp = p => {
+const getStyles = (p: ICategoryGridTitleProps) => {
   const IsAndroid = N.Platform.OS === 'android';
 
   return StyleSheet.create({
@@ -11,13 +12,13 @@ const getStyles: IPassCategoryGridTitleProp = p => {
       margin: 16,
       height: 150,
       borderRadius: 8,
-      elevation: 4,
       backgroundColor: 'white',
       shadowColor: 'black',
       shadowOpacity: 2.5,
       shadowOffset: { width: 0, height: 2 },
       shadowRadius: 8,
       overflow: IsAndroid ? 'hidden' : 'visible',
+      elevation: IsAndroid ? 4 : 0,
     },
     innerWrap: {
       flex: 1,
@@ -42,8 +43,8 @@ const getStyles: IPassCategoryGridTitleProp = p => {
   });
 };
 
-const pressedBtnEffects: IPassCategoryGridTitleProp = p => ({
-  android_ripple: { color: '#ccc' },
+const pressedBtnEffects = (p: ICategoryGridTitleProps) => ({
+  ...Gs.androidRipple,
   style: (param: N.PressableStateCallbackType) => [
     getStyles(p).btn,
     param.pressed ? getStyles(p).btnPressed : null,
