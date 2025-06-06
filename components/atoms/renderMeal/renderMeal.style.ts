@@ -1,6 +1,4 @@
 import { StyleSheet } from 'react-native';
-import * as Gs from '@/styles';
-import { title } from 'process';
 
 const S = StyleSheet.create({
   img: {
