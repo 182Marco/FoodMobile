@@ -77,7 +77,7 @@ export const MEALS = [
     'Classic Hamburger',
     'pricey',
     'simple',
-    'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    'https://mojo.generalmills.com/api/public/content/t3PnGFs1J0KGiHsqv0CBdg_webp_base.webp?v=805b1015&t=191ddcab8d1c415fa10fa00a14351227',
     45,
     [
       '300g Cattle Hack',
@@ -106,7 +106,7 @@ export const MEALS = [
     'Wiener Schnitzel',
     'luxurious',
     'challenging',
-    'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    'https://honest-food.net/wp-content/uploads/2012/12/wiener-schnitzel-horizontal.jpg',
     60,
     [
       '8 Veal Cutlets',
@@ -171,7 +171,7 @@ export const MEALS = [
     'Delicious Orange Mousse',
     'affordable',
     'hard',
-    'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    'https://i.ytimg.com/vi/1FMD0qbYsZw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjZScSngPD5ttkBM2JvZAPpaQvvA',
     240,
     [
       '4 Sheets of Gelatine',
