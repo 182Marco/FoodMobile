@@ -1,35 +1,36 @@
-import {
-  NavigationContainer,
-  useNavigationContainerRef,
-} from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
-import { S } from './Root.style';
+import * as Navi from '@react-navigation/native';
 import * as Screens from '@/screens';
+import * as N from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { S, screensStyles } from './Root.style';
 import { RootStack } from './models';
 
-const Stack = createNativeStackNavigator();
-
 const Root: React.FC = () => {
-  const navigationRef = useNavigationContainerRef();
+  const navigationRef = Navi.useNavigationContainerRef();
 
   return (
-    <View style={S.wrap}>
+    <N.View style={S.wrap}>
       <StatusBar style="dark" />
-      <NavigationContainer ref={navigationRef}>
-        <RootStack.Navigator initialRouteName="MealsCategories">
+      <Navi.NavigationContainer ref={navigationRef}>
+        <RootStack.Navigator
+          initialRouteName="MealsCategories"
+          {...screensStyles}
+        >
           <RootStack.Screen
             name="MealsCategories"
             component={Screens.CategoriesScreen}
+            options={{
+              title: 'Meals Categories',
+            }}
           />
           <RootStack.Screen
             name="MealsOverview"
             component={Screens.MealsOverviewScreen}
+            options={{ title: 'Meals Overview' }}
           />
         </RootStack.Navigator>
-      </NavigationContainer>
-    </View>
+      </Navi.NavigationContainer>
+    </N.View>
   );
 };
 
