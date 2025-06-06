@@ -20,7 +20,7 @@ export const MEALS = [
     'Spaghetti with Tomato Sauce',
     'affordable',
     'simple',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+    'https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg',
     20,
     [
       '4 Tomatoes',
@@ -51,7 +51,7 @@ export const MEALS = [
     'Toast Hawaii',
     'affordable',
     'simple',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzalEbBbjFb4axg0HHmcq-8nLFHKi4in_7xQ&s',
+    'https://www.daringgourmet.com/wp-content/uploads/2020/05/Toast-Hawaii-13.jpg',
     10,
     [
       '1 Slice White Bread',
@@ -310,7 +310,7 @@ export const MEALS = [
     'Asparagus Salad with Cherry Tomatoes',
     'luxurious',
     'simple',
-    'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    'https://www.itisakeeper.com/wp-content/uploads/2013/05/Cold-Asparagus-Salad-with-Tomatoes-HERO3.jpg',
     30,
     [
       'White and Green Asparagus',
