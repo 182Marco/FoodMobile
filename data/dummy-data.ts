@@ -139,7 +139,7 @@ export const MEALS = [
     'Salad with Smoked Salmon',
     'luxurious',
     'simple',
-    'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    'https://www.eatingwell.com/thmb/FB_AjP3MH8L5DdQW7U_Si7xAL9M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7669448-f7bcb95210f646c2a3ba58bddd03bbc5.jpg',
     15,
     [
       'Arugula',
