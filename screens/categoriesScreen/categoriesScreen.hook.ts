@@ -1,8 +1,10 @@
-import * as R from 'react';
+import { IRootStackParamList } from '@/models';
 import { getStyles } from './categoriesScreen.style';
-import { IUseCategoriesScreen } from './categoriesScreen.models';
+import { RouteProp } from '@react-navigation/native';
 
-const useCategoriesScreen: IUseCategoriesScreen = route => {
+const useCategoriesScreen = (
+  route: RouteProp<IRootStackParamList, 'MealsCategories'>
+) => {
   const { params } = route;
   const S = getStyles();
   return { S };
