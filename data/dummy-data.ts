@@ -51,7 +51,7 @@ export const MEALS = [
     'Toast Hawaii',
     'affordable',
     'simple',
-    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzalEbBbjFb4axg0HHmcq-8nLFHKi4in_7xQ&s',
     10,
     [
       '1 Slice White Bread',
