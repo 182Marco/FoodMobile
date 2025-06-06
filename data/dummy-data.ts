@@ -233,7 +233,7 @@ export const MEALS = [
     'Creamy Indian Chicken Curry',
     'pricey',
     'challenging',
-    'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    'https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/creamy-indian-chicken-curry-6bd6fb64.jpg',
     35,
     [
       '4 Chicken Breasts',
