@@ -9,8 +9,4 @@ type ICategoriesScreenProps = NativeStackScreenProps<
 
 type ICategoriesScreen = React.FC<ICategoriesScreenProps>;
 
-type IUseCategoriesScreen = (
-  route: RouteProp<IRootStackParamList, 'MealsCategories'>
-) => Record<string, any>;
-
-export { ICategoriesScreen, IUseCategoriesScreen };
+export { ICategoriesScreen };
