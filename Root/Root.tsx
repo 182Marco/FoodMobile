@@ -4,14 +4,15 @@ import * as N from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { S, screensStyles } from './Root.style';
 import { RootStack } from './models';
+import { useRoot } from './Root.hook';
+/* import { getCategoryTitleById } from '@/utils'; */
 
 const Root: React.FC = () => {
-  const navigationRef = Navi.useNavigationContainerRef();
-
+  const h = useRoot();
   return (
     <N.View style={S.wrap}>
-      <StatusBar style="dark" />
-      <Navi.NavigationContainer ref={navigationRef}>
+      <StatusBar style="" />
+      <Navi.NavigationContainer ref={h.navigationRef}>
         <RootStack.Navigator
           initialRouteName="MealsCategories"
           {...screensStyles}
@@ -26,7 +27,8 @@ const Root: React.FC = () => {
           <RootStack.Screen
             name="MealsOverview"
             component={Screens.MealsOverviewScreen}
-            options={{ title: 'Meals Overview' }}
+            /* Same with other method in MealsOverviewScreen Logic */
+            /*      options={({ route }) => getCategoryTitleById(route.params.categoryId)}  */
           />
         </RootStack.Navigator>
       </Navi.NavigationContainer>
