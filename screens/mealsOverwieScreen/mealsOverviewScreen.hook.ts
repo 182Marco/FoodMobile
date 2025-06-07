@@ -12,7 +12,7 @@ const useMealsOverviewScreen = (navigation: INavigation, route: IRoute) => {
 
   const selectedCategory = MEALS.filter(e => e.categoryIds.includes(catId));
 
-  R.useEffect(() => {
+  R.useLayoutEffect(() => {
     navigation.setOptions(getCategoryTitleById(catId));
   }, [catId, navigation]);
 
