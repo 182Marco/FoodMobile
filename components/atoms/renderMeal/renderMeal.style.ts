@@ -33,16 +33,6 @@ const S = StyleSheet.create({
   btnPressed: {
     opacity: 0.5,
   },
-  details: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 8,
-  },
-  detailEl: {
-    marginHorizontal: 4,
-    fontSize: 12,
-  },
 });
 
 const pressedEffect = {
