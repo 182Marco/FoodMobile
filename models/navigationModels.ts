@@ -1,6 +1,7 @@
 type IRootStackParamList = {
   MealsCategories: undefined;
-  MealsOverview: { categoryId: string };
+  MealsOverview: { catId: string };
+  MealDetails: { mealId: string };
 };
 
 export { IRootStackParamList };
