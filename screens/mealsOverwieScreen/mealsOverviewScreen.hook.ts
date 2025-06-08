@@ -1,8 +1,7 @@
-import { MEALS } from '@/data';
+import * as R from 'react';
 import { INavigation, IRoute } from './mealsOverview.models';
 import { getStyles } from './mealsOverviewScreen.style';
-import { getCategoryTitleById } from '@/utils';
-import * as R from 'react';
+import { getCategoryTitleById, getMealsInCategory } from '@/utils';
 
 const useMealsOverviewScreen = (navigation: INavigation, route: IRoute) => {
   const S = getStyles();
@@ -10,7 +9,7 @@ const useMealsOverviewScreen = (navigation: INavigation, route: IRoute) => {
     params: { catId },
   } = route;
 
-  const selectedCategory = MEALS.filter(e => e.categoryIds.includes(catId));
+  const selectedCategory = getMealsInCategory(catId);
 
   R.useLayoutEffect(() => {
     navigation.setOptions(getCategoryTitleById(catId));
