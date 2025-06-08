@@ -1,34 +1,41 @@
+import * as N from 'react-native';
+import * as U from '@/utils';
+import * as C from '@/constants';
 import * as Navi from '@react-navigation/native';
 import * as Screens from '@/screens';
-import * as N from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { S, screensStyles } from './Root.style';
 import { RootStack } from './models';
 import { useRoot } from './Root.hook';
-/* import { getCategoryTitleById } from '@/utils'; */
 
 const Root: React.FC = () => {
   const h = useRoot();
   return (
     <N.View style={S.wrap}>
-      <StatusBar style="" />
+      <StatusBar style="light" />
       <Navi.NavigationContainer ref={h.navigationRef}>
         <RootStack.Navigator
-          initialRouteName="MealsCategories"
+          initialRouteName={C.ScreenNames.mealsCategories}
           {...screensStyles}
         >
           <RootStack.Screen
-            name="MealsCategories"
+            name={C.ScreenNames.mealsCategories}
             component={Screens.CategoriesScreen}
             options={{
-              title: 'Meals Categories',
+              title: C.ScreenTitles.mealsCategories,
             }}
           />
           <RootStack.Screen
-            name="MealsOverview"
+            name={C.ScreenNames.mealsOverview}
+            options={{
+              title: C.ScreenTitles.mealsOverview,
+            }}
             component={Screens.MealsOverviewScreen}
-            /* Same with other method in MealsOverviewScreen Logic */
-            /*      options={({ route }) => getCategoryTitleById(route.params.categoryId)}  */
+          />
+          <RootStack.Screen
+            name={C.ScreenNames.mealsDetail}
+            component={Screens.MealDetailsScreen}
+            options={({ route }) => U.getMealTitleById(route.params.mealId)}
           />
         </RootStack.Navigator>
       </Navi.NavigationContainer>
