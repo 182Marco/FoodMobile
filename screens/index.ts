@@ -1,2 +1,3 @@
 export { CategoriesScreen } from './categoriesScreen';
-export { mealsOverviewScreen } from './mealsOverviewScreen';
+export { MealsOverviewScreen } from './mealsOverwieScreen';
+export { MealDetailsScreen } from './mealDetailsScreen';
