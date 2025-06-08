@@ -1,7 +1,9 @@
-import * as Gs from '@/styles';
 import { StyleSheet } from 'react-native';
 
 const S = StyleSheet.create({
+  scrollWrap: {
+    marginBottom: 32,
+  },
   img: {
     width: '100%',
     height: 350,
@@ -13,25 +15,14 @@ const S = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
   },
+  detailOuterWrap: {
+    alignItems: 'center',
+  },
+  detailWrap: {
+    width: '80%',
+  },
   detailsText: {
     color: 'white',
-  },
-  subTitle: {
-    color: Gs.colors.detail,
-    fontSize: 18,
-    fontWeight: 'bold',
-    margin: 4,
-    padding: 6,
-    textAlign: 'center',
-    borderBottomColor: 'white',
-    borderBottomWidth: 2,
-  },
-  subTitleWrap: {
-    padding: 6,
-    marginHorizontal: 24,
-    marginVertical: 4,
-    borderBottomColor: Gs.colors.detail,
-    borderBottomWidth: 2,
   },
 });
 
