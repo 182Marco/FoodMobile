@@ -9,4 +9,4 @@ type IMealsDetailsScreenProps = NativeStackScreenProps<
 
 type IMealsDetailsScreen = React.FC<IMealsDetailsScreenProps>;
 
-export { IMealsDetailsScreen };
+export { IMealsDetailsScreen, IMealsDetailsScreenProps };
