@@ -1,9 +1,9 @@
 import { AppRegistry, Platform } from 'react-native';
-import * as C from '@/components';
 import appConfig from '../../app.json';
 import * as R from 'react';
+import { Root } from '@/Root';
 
-const Root = () => <C.Root />;
+const RootEl = () => <Root />;
 
 const { name } = appConfig.expo;
 
@@ -20,7 +20,7 @@ if (Platform.OS === 'web') {
     }
   }, []);
 } else {
-  AppRegistry.registerComponent(name, () => Root);
+  AppRegistry.registerComponent(name, () => RootEl);
 }
 
-export default Root;
+export default RootEl;
