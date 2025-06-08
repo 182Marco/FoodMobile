@@ -1,11 +1,12 @@
 import { getStyles } from './categoryGridTitle.style';
-import { ICategoryGridTitleProps } from './categortGridTitle.models';
 import { useNavigation } from '@react-navigation/native';
+import { IGridTitleProps, INavigationProp } from './categoryGridTitle.models';
 
-const useCategoryGridTitle = (p: ICategoryGridTitleProps) => {
+const useCategoryGridTitle = (p: IGridTitleProps) => {
   const S = getStyles(p);
 
-  const { navigate } = useNavigation();
+  const navigation = useNavigation<INavigationProp>();
+  const navigate = navigation.navigate;
 
   return { S, navigate };
 };
