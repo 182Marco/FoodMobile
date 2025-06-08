@@ -5,6 +5,7 @@ import { isHexColor } from './utils';
 const colors: Record<string, CSSColor> = {
   headerBg: '#351401',
   bg: '#3f2f25',
+  detail: '#e2b497',
 };
 
 const android_ripple: IAndroid_ripple = color => ({
