@@ -1,7 +1,9 @@
-import * as R from 'react';
+import * as Navi from '@react-navigation/native';
 
 const useRoot = () => {
-  return {};
+  const navigationRef = Navi.useNavigationContainerRef();
+
+  return { navigationRef };
 };
 
 export { useRoot };
