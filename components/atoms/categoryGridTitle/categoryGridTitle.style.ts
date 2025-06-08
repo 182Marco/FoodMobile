@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 import * as N from 'react-native';
 import * as Gs from '@/styles';
-import { ICategoryGridTitleProps } from './categortGridTitle.models';
+import { IGridTitleProps } from './categoryGridTitle.models';
 
-const getStyles = (p: ICategoryGridTitleProps) => {
+const getStyles = (p: IGridTitleProps) => {
   const IsAndroid = N.Platform.OS === 'android';
 
   return StyleSheet.create({
@@ -43,7 +43,7 @@ const getStyles = (p: ICategoryGridTitleProps) => {
   });
 };
 
-const pressedBtnEffects = (p: ICategoryGridTitleProps) => ({
+const pressedBtnEffects = (p: IGridTitleProps) => ({
   ...Gs.androidRipple,
   style: (param: N.PressableStateCallbackType) => [
     getStyles(p).btn,
