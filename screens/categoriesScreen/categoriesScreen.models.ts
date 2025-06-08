@@ -1,10 +1,10 @@
+import { ScreenNames } from '@/constants';
 import { IRootStackParamList } from '@/models';
-import { RouteProp } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 type ICategoriesScreenProps = NativeStackScreenProps<
   IRootStackParamList,
-  'MealsCategories'
+  ScreenNames.mealsCategories
 >;
 
 type ICategoriesScreen = React.FC<ICategoriesScreenProps>;
