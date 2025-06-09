@@ -6,6 +6,7 @@ const colors: Record<string, CSSColor> = {
   headerBg: '#351401',
   bg: '#3f2f25',
   detail: '#e2b497',
+  iconColor: '#FFEA00',
 };
 
 const android_ripple: IAndroid_ripple = color => ({
