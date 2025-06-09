@@ -8,20 +8,9 @@ const useMealDetailsScreen = (p: IMealsDetailsScreenProps) => {
 
   /*   R.useLayoutEffect(() => {
     p.navigation.setOptions({
-      headerRight: () => {
-        return (
-          <C.BtnIcon
-            name="star"
-            size={24}
-            color="white"
-            onPress={() => {
-              console.log('Favorite button pressed');
-            }}
-          />
-        );
-      },
+      headerRight: () => <C.IconBtn name="star" color="white" />,s
     });
-  }, [p.navigation]); */
+  }, []); */
 
   return { meal };
 };
