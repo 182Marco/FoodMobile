@@ -20,6 +20,9 @@ const S = StyleSheet.create({
     borderRadius: 8,
     overflow: 'hidden',
   },
+  imgWrap: {
+    position: 'relative',
+  },
   img: {
     width: '100%',
     height: 200,
