@@ -1,5 +1,6 @@
 import * as N from 'react-native';
 import * as C from '@/components';
+import * as Gs from '@/styles';
 import { S } from './MealDetailsScreen.style';
 import { IMealsDetailsScreen } from './MealDetailsScreen.models';
 import { useMealDetailsScreen } from './MealDetailsScreen.hook';
@@ -9,6 +10,14 @@ const MealDetailsScreen: IMealsDetailsScreen = ({ route, navigation }) => {
   const h = useMealDetailsScreen({ route, navigation });
   return (
     <N.ScrollView style={S.scrollWrap}>
+      <C.BtnIcon
+        size={35}
+        color={Gs.colors.iconColor}
+        wrap={S.icon}
+        onPress={() => {
+          console.log('Favorite button pressed');
+        }}
+      />
       <N.Image style={S.img} source={{ uri: h.meal.imageUrl }} />
       <N.Text style={S.title}>{h.meal.title}</N.Text>
       <C.MealInfos
