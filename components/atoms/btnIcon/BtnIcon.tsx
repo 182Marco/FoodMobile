@@ -1,20 +1,24 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as N from 'react-native';
-import { ModelBtnIcon } from './BtnIcon.model';
 import { S } from './BtnIcon.style';
+import { IoniconName, ModelBtnIcon } from './BtnIcon.model';
+import { useBtnIcon } from './BtnIcon.hook';
 
-const BtnIcon: ModelBtnIcon = p => {
+const BtnIcon: ModelBtnIcon = ({
+  name = 'star',
+  color = 'white',
+  size = 24,
+  wrap,
+  onPress,
+}) => {
+  const h = useBtnIcon({ name, onPress });
   return (
-    <N.View>
+    <N.View style={wrap}>
       <N.Pressable
-        onPress={p.onPress}
+        onPress={h.toggleIcon}
         style={({ pressed }) => pressed && S.pressed}
       >
-        <Ionicons
-          name={p.name || 'star'}
-          size={p.size || 24}
-          color={p.color || 'white'}
-        />
+        <Ionicons name={h.iconName as IoniconName} size={size} color={color} />
       </N.Pressable>
     </N.View>
   );
