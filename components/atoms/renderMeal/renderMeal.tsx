@@ -15,7 +15,9 @@ const RenderMeal: IRenderMeal = p => {
       >
         <N.View style={S.innerWrap}>
           <N.View>
-            <N.Image style={S.img} source={{ uri: p.imageUrl }} />
+            <N.View style={S.imgWrap}>
+              <N.Image style={S.img} source={{ uri: p.imageUrl }} />
+            </N.View>
             <N.Text style={S.title}>{p.title}</N.Text>
           </N.View>
           <C.MealInfos
