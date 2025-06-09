@@ -1,16 +1,24 @@
 import { CSSColor } from '@/models';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import * as N from 'react-native';
 import * as React from 'react';
 
-type IoniconNames = React.ComponentProps<typeof Ionicons>['name']; // get the type of the 'name' prop from Ionicons
-
-interface IBtnIconProps {
-  name?: IoniconNames;
-  onPress: () => void;
+interface BtnIconProps {
+  name?: string;
   color?: CSSColor;
   size?: number;
+  wrap?: N.ViewStyle;
+  onPress?: () => void;
 }
 
-type ModelBtnIcon = React.FC<IBtnIconProps>;
+type ModelBtnIcon = React.FC<BtnIconProps>;
 
-export { ModelBtnIcon };
+type IUseBtnIconProp = (obj: Pick<BtnIconProps, 'name' | 'onPress'>) => {
+  toggleIcon: () => void;
+  iconName: string;
+  outlined: boolean;
+};
+
+type IoniconName = React.ComponentProps<typeof Ionicons>['name'];
+
+export { ModelBtnIcon, IoniconName, IUseBtnIconProp };
