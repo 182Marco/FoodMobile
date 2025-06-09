@@ -3,6 +3,13 @@ import { StyleSheet } from 'react-native';
 const S = StyleSheet.create({
   scrollWrap: {
     marginBottom: 32,
+    position: 'relative',
+  },
+  icon: {
+    position: 'absolute',
+    bottom: '95%',
+    right: 18,
+    zIndex: 9,
   },
   img: {
     width: '100%',
