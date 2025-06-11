@@ -4,4 +4,8 @@ type IRootStackParamList = {
   MealDetails: { mealId: string };
 };
 
-export { IRootStackParamList };
+type IDrawerStackParamList = {
+  somethin: undefined;
+};
+
+export { IRootStackParamList, IDrawerStackParamList };
