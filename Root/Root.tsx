@@ -16,7 +16,7 @@ const Root: React.FC = () => {
   const DrawerNavigation = () => {
     return (
       <Drawer.Navigator>
-        {/* Add Drawer.Screen components here as needed */}
+        <Drawer.Screen></Drawer.Screen>
       </Drawer.Navigator>
     );
   };
