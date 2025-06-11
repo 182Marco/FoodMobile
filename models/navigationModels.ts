@@ -1,4 +1,5 @@
 type IRootStackParamList = {
+  Drawer: undefined;
   MealsCategories: undefined;
   MealsOverview: { catId: string };
   MealDetails: { mealId: string };
