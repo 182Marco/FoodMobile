@@ -5,6 +5,7 @@ enum ScreenTitles {
 }
 
 enum ScreenNames {
+  drawer = 'Drawer',
   mealsCategories = 'MealsCategories',
   mealsOverview = 'MealsOverview',
   mealsDetail = 'MealDetails',
