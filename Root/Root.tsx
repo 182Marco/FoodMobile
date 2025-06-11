@@ -16,7 +16,10 @@ const Root: React.FC = () => {
   const DrawerNavigation = () => {
     return (
       <Drawer.Navigator>
-        <Drawer.Screen></Drawer.Screen>
+        <Drawer.Screen
+          name={C.ScreenNames.mealsCategories}
+          component={Screens.CategoriesScreen}
+        ></Drawer.Screen>
       </Drawer.Navigator>
     );
   };
@@ -30,12 +33,19 @@ const Root: React.FC = () => {
           {...screensStyles}
         >
           <RootStack.Screen
+            name={C.ScreenNames.drawer}
+            component={DrawerNavigation}
+            options={{
+              title: C.ScreenTitles.mealsCategories,
+            }}
+          />
+          {/*     <RootStack.Screen
             name={C.ScreenNames.mealsCategories}
             component={Screens.CategoriesScreen}
             options={{
               title: C.ScreenTitles.mealsCategories,
             }}
-          />
+          /> */}
           <RootStack.Screen
             name={C.ScreenNames.mealsOverview}
             options={{
