@@ -10,6 +10,9 @@ import { useRoot } from './Root.hook';
 
 const Root: React.FC = () => {
   const h = useRoot();
+
+  const DrawerNavigation = () => {};
+
   return (
     <N.View style={S.wrap}>
       <StatusBar style="light" />
