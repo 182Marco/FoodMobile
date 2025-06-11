@@ -6,12 +6,20 @@ import * as Screens from '@/screens';
 import { StatusBar } from 'expo-status-bar';
 import { S, screensStyles } from './Root.style';
 import { RootStack } from './models';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { useRoot } from './Root.hook';
 
 const Root: React.FC = () => {
   const h = useRoot();
+  const Drawer = createDrawerNavigator();
 
-  const DrawerNavigation = () => {};
+  const DrawerNavigation = () => {
+    return (
+      <Drawer.Navigator>
+        {/* Add Drawer.Screen components here as needed */}
+      </Drawer.Navigator>
+    );
+  };
 
   return (
     <N.View style={S.wrap}>
