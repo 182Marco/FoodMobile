@@ -1,5 +1,4 @@
-# Welcome  to your Todo App👋
-
+# Welcome
 ## Get started
 
 1. Install dependencies
