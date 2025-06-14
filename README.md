@@ -1,4 +1,4 @@
-# Welcome to your Todo App👋
+# Welcome 
 
 
 ## Get started 
